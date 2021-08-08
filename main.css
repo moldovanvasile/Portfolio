@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url("images/1.png");
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar .sticky {
+  padding: 10px 0;
+  background-color: grey;
+}
+
+.navbar .menu li a {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .container .left-side h1 {
+  color: white;
+  text-decoration: none;
+  margin-left: .5em;
+  font-size: 35px;
+  font-weight: 550;
+}
+
+.navbar .container .left-side span {
+  color: crimson;
+}
+
+.navbar .container .right-side {
+  padding-left: 7em;
+  padding-top: 1em;
+  padding-right: .5em;
+}
+
+.navbar .container .right-side img {
+  cursor: pointer;
+  height: 90%;
+  width: 100%;
+}
+
+.navbar nav {
+  display: none;
+}
+
+nav.menu-btn {
+  display: block;
+  z-index: 999;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #111;
+  height: 100vh;
+  padding: 1em;
+  padding-top: 80px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar menu.active {
+  left: 0;
+}
+
+.navbar .menu li {
+  display: block;
+  padding-left: 5em;
+}
+
+.navbar .menu li a {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+.navbar nav .menu {
+  text-align: center;
+}
+
+.mobile-menu-exit {
+  cursor: pointer;
+  padding-left: 18em;
+}
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 25px;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: crimson;
+}
+
+.btn a {
+  border-radius: 1em;
+}
+
+.btn button {
+  background-color: crimson;
+  color: white;
+  padding: .4em 1em;
+  font-size: .8em;
+  display: inline-block;
+  border-style: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section.home {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section.home .container {
+  padding-top: 5em;
+  margin: auto 0 auto 15px;
+}
+
+section.home .container .home-content .text-1 {
+  font-size: 27px;
+}
+
+section.home .container .home-content .text-2 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+section.home .container .home-content .text-3 {
+  font-size: 27px;
+  margin: 5px 0;
+}
+
+section.home .container .home-content .text-4 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: -3px;
+  color: crimson;
+}
+
+section.home .container a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+}
+
+section.home .container .btn {
+  padding-top: 4em;
+}
+
+section.home .line1 {
+  padding-top: .5em;
+  margin: 10em -.5em -10em -.5em;
+  background-color: white;
+}
+
+section.home .line1 img {
+  width: 22em;
+  height: 10px auto;
+}
+
+section.home .line2 {
+  padding-top: .2em;
+  margin: 10em -.5em -10em -.5em;
+  background-color: white;
+}
+
+section.home .line2 img {
+  width: 22em;
+  height: 10px auto;
+}
+
+section.about .container {
+  padding-left: 2em;
+  padding-top: 4em;
+}
+
+section.about .container h1 {
+  color: #fff;
+  height: 30%;
+  font-size: 30px;
+}
+
+section.about .container h2 {
+  color: #fff;
+  font-family: 'Brush Script MT', sans-serif;
+  text-align: right;
+  padding-top: 3em;
+}
+
+section.about .container span {
+  color: crimson;
+}
+
+section.about .container p {
+  color: #d43939;
+  text-align: justify;
+}
+
+section.contact .container {
+  padding-left: 2em;
+  padding-top: 3em;
+}
+
+section.contact .container h1 {
+  color: crimson;
+  font-family: 'Garamond', sans-serif;
+  font-size: 40px;
+}
+
+section.contact .container a {
+  font-size: 20px;
+}
+
+section.contact .fa-phone:before {
+  content: "\f095";
+}
+
+section.contact .fa-map:before {
+  content: "\f279";
+}
+
+section.contact .fa {
+  font: 'FontAwesome';
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+}
+
+section.contact iframe {
+  padding-top: 3em;
+}
+
+section.projects .container {
+  padding-left: 2em;
+  padding-top: .5em;
+}
+
+section.projects h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  padding-bottom: 1em;
+}
+
+section.projects li {
+  background: #95a7b8;
+  text-align: center;
+  padding: 2em 1em;
+  width: 90%;
+  margin: 0 auto 4em auto;
+  border-radius: 1em;
+}
+
+section.projects li img {
+  width: 5em;
+  height: 5em;
+  border: 3px solid #aa8f8f;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+section.projects .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.projects ul {
+  padding: 0;
+}
+
+section.skills .contain {
+  padding-left: 2em;
+}
+
+section.skills .contain h1 {
+  color: #fff;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+section.skills .contain .column-skills {
+  margin-bottom: 5px;
+}
+
+section.skills .contain .column-skills .bars {
+  margin-bottom: 15px;
+}
+
+section.skills .contain .column-skills .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.skills .contain .column-skills .span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+section.skills .contain .column-skills .line {
+  height: 5px;
+  width: 100%;
+  background: lightgray;
+  position: relative;
+}
+
+section.skills .contain .column-skills .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+section.skills .contain .column-skills .html::before {
+  width: 60%;
+}
+
+section.skills .contain .column-skills .css::before {
+  width: 60%;
+}
+
+section.skills .contain .column-skills .js::before {
+  width: 30%;
+}
+
+section.skills .contain .column-skills .c::before {
+  width: 60%;
+}
+
+section.skills .contain .column-skills .mysql::before {
+  width: 50%;
+}
+
+section.skills .contain .column-skills .boostrap::before {
+  width: 40%;
+}
+
+section.skills .contain .column-skills .git::before {
+  width: 60%;
+}
+
+section.skills .contain .column-skills .microsoft::before {
+  width: 70%;
+}
+
+@media only screen and (min-width: 600px) {
+  .contain {
+    padding-left: 5em;
+    margin-right: 1em;
+    size: initial;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .contain {
+    padding-left: 5em;
+    margin-right: 20em;
+  }
+}
+
+@media only screen and (min-width: 1444px) {
+  .contain {
+    padding-left: 5em;
+    margin-right: 46em;
+  }
+}
+
+@media only screen and (min-width: 730px) {
+  section.projects .container {
+    display: contents;
+  }
+  section.projects h1 {
+    padding-left: 2em;
+  }
+  section.projects ul {
+    padding-right: 40%;
+  }
+}
+
+@media only screen and (min-width: 756px) {
+  section.about .container h1 {
+    padding-top: 1em;
+  }
+  section.about .container p {
+    width: 700px;
+  }
+}
+
+@media only screen and (min-width: 756px) {
+  section.contact .container {
+    padding-top: 4em;
+  }
+  section.contact iframe {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .navbar nav .mobile-menu-exit {
+    padding-left: 42em;
+    margin-top: -2em;
+    float: right;
+    margin-right: 2em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .menu-btn, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    padding-left: 15em;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 40em;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .home-content {
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 7em;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 22em;
+    margin: 0;
+  }
+  .navbar .menu li {
+    display: block;
+    padding-left: 2em;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 25em;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar nav {
+    padding-left: 0;
+  }
+  .navbar nav li {
+    font-size: 2%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

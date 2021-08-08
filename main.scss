@@ -1,0 +1,633 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    //background-color: #33135A;
+    
+    background-image: url("images/1.png");
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-size: cover;
+    
+    
+    
+    
+    
+    
+}
+
+.container{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+
+.navbar{
+    //position: fixed;
+   // width: 100%;
+    padding: 10px 0;
+    //background-color: grey;
+
+    .sticky{
+        padding: 10px 0;
+        background-color: grey;
+    }
+    .menu li a{
+        transition: color 0.5s ease;
+    }
+    .container{
+        display: flex;
+        place-content: space-between;
+        
+
+        .left-side {
+            
+            h1 {
+                color: white;
+                text-decoration: none;
+                margin-left: .5em;
+                font-size: 35px;
+                font-weight: 550;
+                
+            
+            }
+
+            span {
+                 color: crimson;
+             }
+            
+            
+        }
+
+        .right-side{
+            padding-left: 7em;
+            padding-top: 1em;
+            padding-right: .5em;
+
+            img {
+                cursor: pointer;
+                height: 90%;
+                width: 100%;
+            }
+        }
+    }
+
+    
+
+    
+ nav{
+     display: none;
+ }
+
+
+ 
+}
+
+nav.menu-btn {
+    display: block;
+    z-index: 999;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width:100% ;
+    left: 0;
+    top: 0;
+    background: #111;
+    height: 100vh;
+    padding: 1em;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    
+}
+
+.navbar menu.active{
+    left: 0;
+}
+.navbar .menu li{
+    display: block;
+    padding-left: 5em;
+}
+.navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+    //text-align: center;
+    
+}
+.navbar nav .menu {
+    text-align: center;
+}
+
+
+
+
+.mobile-menu-exit {
+    //float: right;
+    cursor: pointer;
+    padding-left: 18em;
+    
+    
+   
+}
+
+
+
+.menu{
+
+    
+    
+    li{
+        list-style: none;
+        display: inline-block;
+        //text-align: right;
+        
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: .5em;
+        font-size: 25px;
+        
+        //margin-left: 8px;
+
+            &:hover{
+                font-weight: bold;
+                color: crimson;
+            }
+
+    }
+}
+
+.btn {
+    a{
+        border-radius: 1em;
+    }
+    button{
+        background-color: crimson;
+        color: white;
+        padding: .4em 1em;
+        font-size: .8em;
+        
+        //font-weight: bold ;
+        display: inline-block;
+        border-style: none;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+section.home{
+    //background: url("images/backgroud.svg") center ;
+    color: white;
+    
+    font-family: 'Ubuntu', sans-serif;
+    //display: flex;
+
+    .container{
+        padding-top: 5em;
+        margin: auto 0 auto 15px;
+
+
+        .home-content .text-1{
+            font-size: 27px;;
+        }
+        .home-content .text-2{
+            font-size: 55px;
+            font-weight: 600;
+            margin-left: -3px;
+        }
+        .home-content .text-3{
+            font-size: 27px;
+            margin: 5px 0;
+        }
+        .home-content .text-4{
+            font-size: 35px;
+            font-weight: bold;
+            margin-left: -3px;
+            color: crimson;
+
+        }
+
+        a{
+            text-decoration: none;
+            display: inline-block;
+            background-color: crimson;
+            color: #fff;
+            font-size: 25px;
+            padding: 12px 36px;
+            
+        }
+
+        .btn{
+            padding-top: 4em;
+        }
+
+        
+        
+
+    }
+
+    .line1{
+        padding-top: .5em;
+        
+        margin: 10em -.5em -10em -.5em;
+        background-color: white;
+        
+        
+        img{
+            width: 22em;
+            height: 10px auto;
+            
+        }
+        
+        
+    }
+
+    .line2{
+        padding-top: .2em;
+        
+        margin: 10em -.5em -10em -.5em;
+        background-color: white;
+        
+        
+        img{
+            width: 22em;
+            height: 10px auto;
+            
+        } 
+        
+        
+    }
+
+
+
+    
+}
+section.about {
+    .container{
+        padding-left: 2em;
+        padding-top: 4em;
+        
+        h1{
+            color: #fff;
+            height: 30%;
+            font-size: 30px;
+            
+        
+        }
+
+        h2{
+            color: #fff;
+            font-family: 'Brush Script MT', sans-serif;
+            text-align: right;
+            padding-top: 3em;
+            
+        }
+        span{
+            color: crimson;
+        }
+        p{
+            color: rgb(212, 57, 57);
+            text-align:justify;
+            
+            
+        }
+
+    }
+}
+
+section.contact{
+    .container{
+        padding-left: 2em;
+        padding-top: 3em;
+       
+        h1{
+            color:crimson;
+            font-family: 'Garamond', sans-serif;
+            font-size: 40px;
+        }
+        a{
+            
+            font-size: 20px;
+        }
+    }
+
+    .fa-phone:before {
+        content: "\f095";
+        
+        
+    }
+
+    .fa-map:before {
+        content: "\f279";
+    }
+    .fa{
+        font: 'FontAwesome';
+        display: inline-block;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        cursor: pointer;
+    }
+
+    iframe {
+        padding-top: 3em;
+        
+    }
+
+   
+
+    
+}
+
+section.projects{
+    .container{
+        padding-left: 2em;
+        padding-top: .5em;
+          
+    }
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        color: red;
+        padding-bottom: 1em;
+        
+        
+    }
+     
+      
+      li {
+        background: #95a7b8;
+        text-align: center;
+        padding: 2em 1em;
+        width: 90%;
+        margin: 0 auto 4em auto;
+        border-radius: 1em;
+      }
+      
+       li img {
+        width: 5em;
+        height: 5em;
+        border: 3px solid #aa8f8f;
+        border-radius: 50%;
+        margin-top: -4.5em;
+      }
+     
+      .projects{
+        display: flex;
+      }
+      ul{
+          padding: 0;
+      }
+}
+section.skills{
+    .contain{
+        
+        padding-left: 2em;
+        h1{
+            color: #fff;
+            padding-bottom: 1em;
+            text-align: left;
+        }
+        .column-skills {
+            margin-bottom: 5px;
+            .bars{
+
+            margin-bottom: 15px;
+            }
+            .info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+
+         .span{
+            font-weight: 500;
+            font-size: 18px;
+            }
+         .line{
+            height: 5px;
+            width: 100%;
+            background: lightgray;
+            position: relative;
+            }
+        }
+        .column-skills .line::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 80%;
+            left: 0;
+            top: 0;
+            background: crimson;
+
+        }
+        .column-skills .html::before{
+            width: 60%;
+        }
+        .column-skills .css::before{
+            width: 60%;
+        }
+        .column-skills .js::before{
+            width: 30%;
+        }
+        .column-skills .c::before{
+            width: 60%;
+        }
+        .column-skills .mysql::before{
+            width: 50%;
+        }
+        .column-skills .boostrap::before{
+            width: 40%;
+        }
+        .column-skills .git::before{
+            width: 60%;
+        }
+        .column-skills .microsoft::before{
+            width: 70%;
+        }
+    }
+}
+@media only screen and ( min-width: 600px){
+    .contain{
+        padding-left: 5em;
+        //display: block;
+        margin-right: 1em;
+        size: initial;
+        
+    }
+}
+@media only screen and ( min-width: 1400px){
+    .contain{
+        padding-left: 5em;
+        //display: block;
+        margin-right: 20em;
+        
+        
+    }
+}
+@media only screen and ( min-width: 1444px){
+    .contain{
+        padding-left: 5em;
+        //display: block;
+        margin-right: 46em;
+        
+        
+    }
+}
+@media only screen and ( min-width: 730px){
+    section.projects{
+        .container{
+            display: contents;
+        }
+        h1{
+            padding-left: 2em;
+        }
+       
+        ul{
+            
+            padding-right: 40%;
+            
+        }
+        
+    }
+
+}
+@media only screen and ( min-width: 756px){
+    section.about{
+        .container{
+            h1{
+                padding-top: 1em;
+            }
+            p{
+                width: 700px;
+            }
+        }
+    }
+
+}
+@media only screen and ( min-width: 756px){
+    section.contact{
+        .container{
+            
+            padding-top: 4em;
+            
+            
+            
+        }
+        iframe{
+            width: 600px;
+        }
+    }
+
+}
+
+
+@media only screen and ( min-width: 375px){
+    .navbar nav .mobile-menu-exit {
+        padding-left: 42em;
+        margin-top: -2em;
+        float: right;
+        margin-right: 2em;
+        
+        
+    }
+}
+
+
+@media only screen and ( min-width: 800px){
+    .menu-btn, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        
+    }
+
+    .navbar nav{
+        display: flex;
+        background: none;
+        //position: unset;
+        height: auto;
+        width: 100%;
+        padding: 1em;
+        padding-left: 15em;
+
+        ul{
+            display: flex;
+            padding-left: 40em;
+            margin: 0;
+        }
+    }
+
+   
+}
+    
+
+
+
+@media only screen and (min-width: 900px){
+
+
+    .container {
+        display: flex;
+        .home-content {
+            width: 750px;
+            margin: 0 auto;
+            padding-top: 7em;
+        }
+
+        
+    }
+
+    .navbar nav ul{
+        display: flex;
+        padding-left: 22em;
+        margin: 0;
+    }
+
+    
+
+    .navbar .menu li{
+        display: block;
+        padding-left: 2em;
+    }
+
+    .navbar nav ul{
+        display: flex;
+        padding-left: 25em;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+    .navbar nav{
+        padding-left: 0;
+        li{
+            font-size: 2%;
+            
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
