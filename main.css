@@ -452,6 +452,13 @@ section.skills .contain .column-skills .microsoft::before {
   }
 }
 
+@media only screen and (min-width: 730px) {
+  section.projects .container ul {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .menu-btn, .mobile-menu-exit {
     display: none;
@@ -516,6 +523,21 @@ section.skills .contain .column-skills .microsoft::before {
   }
   .navbar nav li {
     font-size: 2%;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  section.projects .container ul {
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1211px) {
+  section.projects .container h1 {
+    padding-left: 12%;
+  }
+  section.projects .container ul {
+    padding-right: 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */
