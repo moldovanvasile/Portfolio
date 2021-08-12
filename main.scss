@@ -313,6 +313,7 @@ section.contact{
         a{
             
             font-size: 20px;
+            
         }
     }
 
@@ -405,12 +406,14 @@ section.skills{
             justify-content: space-between;
             }
 
-         .span{
+            span{
             font-weight: 500;
-            font-size: 18px;
+            font-size: 20px;
+            color: rgb(185, 170, 170);
             }
-         .line{
-            height: 5px;
+
+          .line{
+            height: 8px;
             width: 100%;
             background: lightgray;
             position: relative;
